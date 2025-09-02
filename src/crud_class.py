@@ -28,7 +28,7 @@ class EC2Manager:
         )
 
         instance_id = instances[0].id
-        print(f"[INSTÂNCIA CRIADA]: {instance_id}")
+        return instance_id
 
     def list_instances(self):
         result = []
