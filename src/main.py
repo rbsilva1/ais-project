@@ -1,4 +1,4 @@
-from ec2_manager import EC2Manager
+from .crud_class import EC2Manager
 
 
 def main_menu():
@@ -54,9 +54,9 @@ def main():
             instance_id = manager.create_instance()
             print(f"Instância criada: {instance_id}")
 
-        elif choice == "3":
-            inst_id = input("Digite o ID da instância a remover: ")
-            manager.terminate_instance(inst_id)
+        # elif choice == "3":
+        #     inst_id = input("Digite o ID da instância a remover: ")
+        #     manager.terminate_instance(inst_id)
 
         elif choice == "0":
             print("Saindo...")
